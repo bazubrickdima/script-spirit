@@ -1,0 +1,330 @@
+/* =============================fonts============================== */
+
+@font-face {
+font-family: blisspro-light;
+src: local("blisspro-light"), url("fonts/blisspro-light.otf");
+}
+@font-face {
+font-family: ClinicaPro-Regular;
+src: local("ClinicaPro-Regular"), url("fonts/ClinicaPro-Regular.otf");
+}
+@font-face {
+font-family: FiraSansOT-Regular;
+src: local("FiraSansOT-Regular"), url("fonts/FiraSansOT-Regular.otf");
+}
+@font-face {
+font-family: FiraSansOT-Light;
+src: local("FiraSansOT-Light"), url("fonts/FiraSansOT-Light.otf");
+}
+/* =============================fonts============================== */
+/* =============================class============================== */
+.blueText{
+    color: #12A3D4;
+}
+.textContentBlack{
+    font-family: FiraSansOT-Regular;
+    letter-spacing: -1px;
+    font-size: 1.45rem;
+    color: #414141;
+}
+.headerBlue{
+    color: #2196F3;
+    font-family: blisspro-light;
+    margin: 2.5rem 0px 1rem 0;
+    font-size: 50px;
+}
+.subHeaderBlack{
+    font-family: ClinicaPro-Regular;
+    color: #414141;
+    font-size: 24px;
+    margin: 0 0 2rem 0;
+}
+/* =============================class============================== */
+body{
+    font-family: FiraSansOT-Regular;
+    color: #414141;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+}
+/* =============================nav============================== */
+#nav{
+    background-color:#414141;
+}
+@media only screen and (min-width : 992px) {
+    nav .brand-logo {
+        margin-left: 10%;
+    }
+}
+#nav-container{
+    height: 100px; /* задаем виситу в навигаци */
+}
+.logotip{
+    margin-top: 10px;
+    position: absolute;
+
+}
+.textLogo{
+    margin-top: 10px;
+    margin-left: 70px;
+}
+nav ul a:hover {
+    color:#12A3D4;
+}
+
+.nav-wrapper .en, .ru{
+    cursor: pointer;
+}
+.right{
+    margin-top: 12px;
+}
+.right a{
+    font-size: 20px;
+}
+.right img{
+    margin-top: 23px;
+    margin-left: 4px;
+}
+
+/* =============================nav============================== */
+/*==================================mainSlider==============================*/
+.mainSlider {
+    width:100%;
+    min-height:100%;
+    height: auto;
+    background:url(m1.jpg) center no-repeat;
+    background-size:cover;
+    padding-top: 120px;
+}
+.mainContentText1{
+    color: white;
+    margin-bottom: 0;
+    font-size: 100px;
+    font-weight: 600;
+    font-family: ClinicaPro-Regular;
+}
+
+.mainContentText2{
+    margin-top: 0;
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: ClinicaPro-Regular;
+}
+.mainContent h5{
+    color: white;
+    margin-top: 200px;
+}
+.MainArrowBlock{
+    position: absolute;
+    bottom: 1px;
+
+}
+.MainArrowBlock img{
+    cursor: pointer;
+}
+/*==================================mainSlider==============================*/
+.aboutUs{
+    min-height: 400px;
+    background-color: #F5F5F5;
+}
+.aboutUs button {
+    margin: 20px;
+}
+.man2{
+    margin-top: 50px;
+}
+/* ===================================info=============================== */
+.info{
+    min-height: 300px;
+    background-color: #12A3D4;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-family: ClinicaPro-Regular;
+}
+.info h5{
+    font-family: ClinicaPro-Regular;
+    color: #FFFFFF;
+}
+.info p{
+    font-size: 1.15rem;
+    color: #FFFFFF;
+}
+/* ===================================info=============================== */
+/* ===================================services=============================== */
+.servicesMainInSide{
+    position: relative;
+}
+.servicesMain{
+    min-height: 600px;
+    max-width: 100%;
+    z-index: 0;
+    overflow: hidden;
+/*   background-color: #F5F5F5;*/
+}
+
+.servicesHideLeft{
+    position: relative;
+    left: -150%;
+}
+.servicesHideRight{
+    position: relative;
+    right: -150%;
+
+}
+.servicesHideLeft2{
+    position: relative;
+    left: -150%;
+}
+.servicesHideRight2{
+    position: relative;
+    right: -150%;
+
+}
+.services{
+    padding: 50px;
+    margin-bottom: 1.5rem;
+}
+.servicesHeader h3{
+    color: #414141;
+
+}
+.servicesText{
+    font-family: Drugs;
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+}
+.servicesShadow:hover{
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.servicesImgLeft{
+    margin-top: 10px;
+    width: 100px;
+    float: left;
+}
+.servicesImgRight{
+    margin-top: 10px;
+    width: 100px;
+    float: right;
+   /*  margin-left: 10px; */
+}
+.servicesMain p {
+    font-size: 18px;
+}
+/* ===================================services=============================== */
+/* ===================================devProcces=============================== */
+.devProcess{
+    font-family: ClinicaPro-Regular;
+    color: #414141;
+    padding: 70px;
+    height: 320px;
+    background-color: #EEEEEE;
+}
+.devBlock{
+    width: 20%;
+    float: left;
+}
+.centra{
+    width: 830px;
+    margin: 100px auto 100px auto;
+}
+.centra1{
+        position: relative;
+    width: 1000px;
+    margin: auto;
+}
+.grayLine{
+    margin-top: 47px;
+    width: 170px;
+    height: 5px;
+    background-color: #BDBDBD;
+    float: left;
+}
+#dev, #dev1, #dev2, #dev3, #dev4{
+    margin-top: 35px;
+}
+#line1, #line2,#line3,#line4{
+     background-color: #12A3D4; 
+   
+    height: 5px;
+    width: 1px;
+    transition: width 1s cubic-bezier(0, 0, 1, 1);
+}
+#line1.movingLine, #line2.movingLine, #line3.movingLine, #line4.movingLine {
+    width: 100%;
+}
+#dev, #dev1, #dev2, #dev3, #dev4{
+ padding-top: 1px;
+    background-color: #FFFFFF;
+    border: 4px solid #BDBDBD;
+    height: 30px;
+    width: 30px;
+    /* background-color: #BDBDBD; */
+    /*    background-image: url("vk.png");*/
+    float: left;
+    transition: border 1s;
+}
+#dev.transformBlock, #dev1.transformBlock, #dev2.transformBlock, #dev3.transformBlock, #dev4.transformBlock    {
+    border: 4px solid #12A3D4;
+}
+.devProcesBlock{
+    margin-top: 40px;
+}
+/* ===================================devProcces=============================== */
+/* ===================================parallax===============================
+.parallax-container h3{
+    color: #FFFFFF;
+    margin: 70px 0 20px 0;
+}
+
+.parallax-container h5{
+    color: #FFFFFF;
+}
+===================================parallax=============================== */
+
+
+
+/* ===================================contact=============================== */
+.contactBlock{
+    margin-top: 20px;
+}
+.contactHead{
+    color: #2196F3;
+    margin: 20px 0 0 0;
+    font-size: 20px;
+}
+.contactInformation{
+    height: 200px;
+    padding-top: 100px;
+}
+.contactInformation p{
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.contactInformation img{
+margin-right: 25px;
+}
+#contactButton{
+    margin-left: 10px;
+    float: right;
+    margin-bottom: 40px;
+}
+/* ===================================contact=============================== */
+/* ===================================footer=============================== */
+.footerBottom{
+    background-color: red;
+}
+.social img{
+    margin-left: 5px;
+}
+/* ===================================footer=============================== */
+.modal{
+    font-family: ClinicaPro-Regular;
+}
+.modal p{
+    font-size: 19px;
+}

@@ -1,0 +1,42 @@
+<template name="reviews">
+    <div class="reviews">
+        <div class="row">
+        <div class="col s10 offset-s1">
+        <h3 class="center-align headerBlue">TESTIMOMIALS</h3>
+            <div class="slider">
+        <ul class="slides">
+            <li class="slide">
+                <div class="box center-align col s10 offset-s1 testimonals">
+                     <img src="men1.png" alt="" class="responsive-img">
+                  <div class="col s10 offset-s1 textContentBlack">
+                        <h5>"Звернувся у компанію SCRIPT SPIRIT, щоб створити сайт для моєї компанії з нерухомості, і вони виявились професіоналами своєї справи, якісно розробили сайт та налаштували контекстну рекламу, загалом це призвело до збільшення клієнтів та прибутку. Рекомендую!!!"</h5>
+                  </div>
+                </div>
+            </li>
+            <li class="slide">
+                <div class="box center-align col s10 offset-s1">
+                     <img src="men2.png" alt="" class="responsive-img">
+                  <div class="col s10 offset-s1 textContentBlack">
+                        <h5>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampdassical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney Colleg</h5>
+                  </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+        </div>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+      var glide = $('.slider').glide().data('api_glide');
+
+        $(window).on('keyup', function (key) {
+          if (key.keyCode === 13) {
+            glide.jump(3, console.log('Wooo!'));
+          };
+        });
+
+      
+    </script>
+
+</template>
