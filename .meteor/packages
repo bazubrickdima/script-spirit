@@ -20,11 +20,9 @@ insecure                # Allow all DB writes from clients (for prototyping)
 orionjs:core
 fortawesome:fontawesome
 orionjs:materialize
-underscore
-standard-app-packages
-sacha:spin
-audit-argument-checks
 iron:router
 xxx:materialize:materialize
 email
 gfk:mailgun-api
+new3rs:current-visitors
+bigdata:visit-tracker

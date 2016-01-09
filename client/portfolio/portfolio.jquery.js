@@ -2,6 +2,7 @@ Template.main.onRendered(function () {
    $('.thumbs').portfolio({
         cols: 3
     });
+      
 });
 
 if (typeof Object.create !== 'function') {

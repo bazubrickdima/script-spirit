@@ -11,6 +11,17 @@ Template.nav.events({
 	'click .brand-logo':function(e){
 		e.preventDefault();
 		$("body,html").animate({scrollTop: 1 }, 800);
+
+
+
+
+		var userVisitor = Session.get('currentVisit');
+		console.log(userVisitor);
+        Meteor.call('addVisitor',userVisitor, function (err, res) {
+            if(err){
+                aler(err + 'lelekapodibno');
+            }
+        });
 	}
 });
 
