@@ -6,12 +6,3 @@ Template.modal1.events({
         $("body,html").animate({scrollTop: minus }, 800);
     }
 });
-
-
-/*Template.main.created = function () {
-	Meteor.call('addVisitor',userVisitor, function (err, res) {
-            if(err){
-                aler(err + 'lelekapodibno');
-            }
-        });
-}*/

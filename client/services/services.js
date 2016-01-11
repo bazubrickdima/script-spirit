@@ -28,7 +28,7 @@ Template.services.events({
 		$('#modal1').openModal();
 	}
 });
-Template.services.events({
+/*Template.services.events({
 	'click .modal2': function (e) {
 		$('#modal2').openModal();
 	}
@@ -42,6 +42,6 @@ Template.services.events({
 	'click .modal4': function (e) {
 		$('#modal4').openModal();
 	}
-});
+});*/
 
 
