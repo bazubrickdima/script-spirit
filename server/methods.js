@@ -33,27 +33,15 @@ Meteor.methods({
       hour: 'numeric',
       minute: 'numeric',
       second: 'numeric'
-    };/*date.toLocaleString("en-US", options)*/
-
-     var nowUserId = Visitors.insert({
+    };
+    var nowUserId = Visitors.insert({
         ipAddress: user.ipAddress,
         browser: user.userAgent.browser.family,
         os: user.userAgent.os.family,
-        date: date.toLocaleString("en-US", options)
-/*        city: user.geo.city || ,
-        country: user.geo.country,
-        ll: ll[0] + ',' + ll[1]*/
-      });
-  if(user.geo){
-     /*    Visitors.insert({
-            ipAddress: user.ipAddress,
-            browser: user.userAgent.browser.family,
-            os: user.userAgent.os.family,
-            date: date.toLocaleString("en-US", options),
-            city: user.geo.city,
-            country: user.geo.country
-
-      });*/
+        date: date.toLocaleString("en-US", options),
+        referer: user.referer || 'undefined'
+    });
+    if(user.geo){
          Visitors.update({
           _id: nowUserId
         },{
@@ -63,12 +51,38 @@ Meteor.methods({
             country: user.geo.country
           }
         });
-  }
+    }
 
-    
- /*      console.log(user.userAgent.os.family);
-      console.log(user.geo.city);
-      console.log(user.geo.country);
-      console.log(user.geo.ll);*/
+    if( !FullDay.findOne({ipAddress: user.ipAddress}) ){
+        FullDay.insert({
+            ipAddress: user.ipAddress,
+            browser: user.userAgent.browser.family,
+            os: user.userAgent.os.family,
+            date: date.toLocaleString("en-US", options),
+            referer: user.referer || 'undefined'
+        });
+    }
+
   }
 });
+var second = 1000 * 3600;
+Meteor.setInterval(function () {
+    var now = new Date();
+/*    now.setHours(now.getHours() + 2);*/
+    var options = {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      weekday: 'long',
+      timezone: 'EET',
+      hour: 'numeric',
+      minute: 'numeric',
+      second: 'numeric'
+    };
+    var countVisitors = FullDay.find().count();
+    FullDay.remove({});
+    CountVisits.insert({
+            count: countVisitors,
+            date: date.toLocaleString("en-US", options)
+        });
+}, second);
