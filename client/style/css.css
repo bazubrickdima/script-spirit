@@ -317,6 +317,7 @@ nav ul a:hover {
 .servicesHideLeft{
     position: relative;
     left: -150%;
+
 }
 .servicesHideRight{
     position: relative;
@@ -335,6 +336,7 @@ nav ul a:hover {
 .services{
     padding: 50px;
     margin-bottom: 1.5rem;
+    cursor: pointer;
 }
 .servicesHeader h3{
     color: #414141;
@@ -456,7 +458,8 @@ nav ul a:hover {
     margin-top: 10px;
 }
 .contactInformation img{
-margin-right: 25px;
+    margin-right: 25px;
+    cursor: pointer;
 }
 #contactButton{
     margin-left: 10px;

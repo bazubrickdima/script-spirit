@@ -1,7 +1,7 @@
-$( document ).ready(function(){
+/*$( document ).ready(function(){
   $(".button-collapse").sideNav();
 });
-
+*/
 Template.nav.onRendered(function () {
     Session.set('en', true);
     Session.set('ru', false);
@@ -11,17 +11,6 @@ Template.nav.events({
 	'click .brand-logo':function(e){
 		e.preventDefault();
 		$("body,html").animate({scrollTop: 1 }, 800);
-
-
-
-
-		var userVisitor = Session.get('currentVisit');
-		console.log(userVisitor);
-        Meteor.call('addVisitor',userVisitor, function (err, res) {
-            if(err){
-                aler(err + 'lelekapodibno');
-            }
-        });
 	}
 });
 
@@ -31,7 +20,6 @@ Template.nav.events({
 		var atribyte = $(e.target).attr("href");
 		var destination = $('.' + atribyte).offset().top;
 		var minus = destination - 95;
-		console.log(atribyte);
 		if(atribyte === 'port'){
 			minus -= 40;
 		}

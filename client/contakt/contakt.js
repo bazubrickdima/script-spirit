@@ -1,5 +1,5 @@
-$( document ).ready(function() {
-    $( '.contact img' ).hover(
+Template.main.onRendered(function () {
+  $( '.contact img' ).hover(
         function() {
             var imgSrc = $(this).attr('src');
             var newImgSrc = 'H' + imgSrc;
@@ -11,6 +11,7 @@ $( document ).ready(function() {
             $( this ).attr('src', newImgSrc);
         }
     );
+      
 });
 Template.contact.events({ // плавна прокрутка до якоря
     'submit form':function(e) {

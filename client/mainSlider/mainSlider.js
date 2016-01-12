@@ -16,7 +16,7 @@ Template.mainSlider.events({
     'click .MainArrowBlock img': function (e) {
         e.preventDefault();
         var destination = $('.aboutUs').offset().top;
-        var minus = destination - 70;
+        var minus = destination - 95;
         $("body,html").animate({scrollTop: minus }, 800);
 
     }
