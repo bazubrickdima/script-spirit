@@ -86,3 +86,9 @@ Meteor.setInterval(function () {
             date: date.toLocaleString("en-US", options)
         });
 }, second);
+
+
+Meteor.publish('visitors',function () {
+  return Visitors.find();
+  
+});

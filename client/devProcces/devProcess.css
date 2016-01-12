@@ -1,3 +1,26 @@
+/*@media only screen and (min-width: 1051px) {
+    .centra{
+        visibility: hidden;
+    }
+    .centra1{
+        visibility: visible;
+    }
+}*/
+@media only screen and (min-width: 1101px) {
+    .devProcesBlock{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .centra{
+        display: none;
+    }
+    .centra1{
+        display: none;
+    }
+}
+
+
 .devImg{
     margin-top: 50px;
     margin-bottom: 40px;
